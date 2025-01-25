@@ -701,3 +701,120 @@ img {
     font-size: 16px;
   }
 }
+
+.gallery {
+  position: relative;
+  padding: 130px 0 140px;
+  overflow: hidden;
+}
+@media (max-width: 992px) {
+  .gallery {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 576px) {
+  .gallery {
+    padding: 50px 0 90px;
+  }
+}
+.gallery__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 48px;
+  margin: 0 0 40px;
+}
+@media (max-width: 576px) {
+  .gallery__heading {
+    margin-bottom: 20px;
+  }
+}
+.gallery__title {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-family: "Gilroy", sans-serif;
+  font-size: 60px;
+  line-height: 117%;
+  text-transform: uppercase;
+  color: #101b34;
+}
+@media (max-width: 1400px) {
+  .gallery__title {
+    font-size: 48px;
+  }
+}
+@media (max-width: 992px) {
+  .gallery__title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 576px) {
+  .gallery__title {
+    font-size: 24px;
+    line-height: 142%;
+  }
+}
+.gallery__title-light {
+  font-weight: 300;
+}
+.gallery__title-bold {
+  font-weight: 700;
+}
+.gallery__slider-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 755/450;
+  border-radius: 4px;
+}
+.gallery__slider .swiper {
+  overflow: visible;
+}
+.gallery__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  gap: 52px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 576px) {
+  .gallery__controls {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+.gallery__controls-prev, .gallery__controls-next {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(../assets/icons/arrow.svg) center/cover no-repeat;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.gallery__controls-next {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}

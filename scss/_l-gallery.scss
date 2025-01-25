@@ -1,0 +1,100 @@
+.gallery {
+  position: relative;
+  padding: 130px 0 140px;
+  overflow: hidden;
+
+  @include laptop {
+    padding: 80px 0;
+  }
+
+  @include mobile {
+    padding: 50px 0 90px;
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    margin: 0 0 40px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 60px;
+    line-height: 117%;
+    text-transform: uppercase;
+    color: #101b34;
+
+    @include desktop {
+      font-size: 48px;
+    }
+
+    @include laptop {
+      font-size: 32px;
+    }
+
+    @include mobile {
+      font-size: 24px;
+      line-height: 142%;
+    }
+
+    &-light {
+      font-weight: 300;
+    }
+
+    &-bold {
+      font-weight: 700;
+    }
+  }
+
+  &__slider {
+    &-image {
+      display: block;
+      width: 100%;
+      aspect-ratio: 755 / 450;
+      border-radius: 4px;
+    }
+
+    & .swiper {
+      overflow: visible;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    gap: 52px;
+    width: fit-content;
+
+    @include mobile {
+      position: absolute;
+      left: 50%;
+      bottom: 40px;
+      transform: translateX(-50%);
+    }
+
+    &-prev,
+    &-next {
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: url(../assets/icons/arrow.svg) center / cover no-repeat;
+      user-select: none;
+      cursor: pointer;
+    }
+
+    &-next {
+      transform: rotate(180deg);
+    }
+  }
+}
