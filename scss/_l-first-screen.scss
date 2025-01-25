@@ -1,0 +1,144 @@
+.first-screen {
+  padding: 112px 0 106px;
+  overflow: hidden;
+
+  @include laptop {
+    padding: 80px 0;
+  }
+
+  @include mobile {
+    padding: 30px 0 50px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    margin: 0 0 50px;
+
+    @include laptop {
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 24px;
+      margin: 0 0 32px;
+    }
+
+    @include mobile {
+      gap: 6px;
+    }
+
+    &-title {
+      display: flex;
+      flex-direction: column;
+      flex: 0 1 768px;
+      margin: 0;
+      font-family: 'Gilroy', sans-serif;
+      font-size: 80px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #101b34;
+
+      @include desktop {
+        font-size: 72px;
+      }
+
+      @include laptop {
+        flex: 0 1 auto;
+        font-size: 60px;
+      }
+
+      @include mobile {
+        font-size: 36px;
+        line-height: 120%;
+      }
+
+      &-light {
+        text-align: left;
+        font-weight: 300;
+      }
+
+      &-bold {
+        text-align: right;
+        font-weight: 700;
+
+        @include laptop {
+          text-align: left;
+        }
+      }
+    }
+
+    &-description {
+      display: flex;
+      flex-direction: column;
+      flex: 0 1 616px;
+      gap: 20px;
+
+      @include laptop {
+        flex: 0 1 auto;
+      }
+
+      @include mobile {
+        gap: 16px;
+      }
+
+      &-item {
+        margin: 0;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 165%;
+        letter-spacing: -0.02em;
+        color: #383b44;
+
+        @include mobile {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  &__slider {
+    margin:  0 0 34px;
+
+    @include laptop {
+      margin: 0 0 30px;
+    }
+
+    &-image {
+      display: block;
+      width: 100%;
+      aspect-ratio: 755 / 450;
+      border-radius: 4px;
+    }
+
+    & .swiper {
+      overflow: visible;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 52px;
+
+    @include laptop {
+      justify-content: center;
+    }
+
+    &-prev,
+    &-next {
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: url(../assets/icons/arrow.svg) center / cover no-repeat;
+      user-select: none;
+      cursor: pointer;
+    }
+
+    &-next {
+      transform: rotate(180deg);
+    }
+  }
+}

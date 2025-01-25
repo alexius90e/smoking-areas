@@ -20,3 +20,27 @@ if (headerElems.burger && headerElems.menu) {
     }
   });
 }
+
+const partneryV2Swiper = new Swiper('.first-screen__slider .swiper', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 1.25,
+    },
+    768: {
+      slidesPerView: 1.5,
+    },
+    992: {
+      slidesPerView: 2,
+    },
+  },
+  navigation: {
+    nextEl: '.first-screen__controls-next',
+    prevEl: '.first-screen__controls-prev',
+  },
+});
