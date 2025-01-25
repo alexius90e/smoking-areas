@@ -1,0 +1,120 @@
+.advantages {
+  padding: 102px 0 130px;
+  background: url(../assets/advantages-bg.jpg) center / cover no-repeat;
+
+  @include laptop {
+    padding: 80px 0;
+  }
+
+  @include mobile {
+    padding: 50px 0 54px;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 40px;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 60px;
+    line-height: 117%;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    @include desktop {
+      font-size: 48px;
+    }
+
+    @include laptop {
+      margin: 0 0 32px;
+      font-size: 32px;
+    }
+
+    @include mobile {
+      margin: 0 0 24px;
+      font-size: 24px;
+      line-height: 142%;
+      text-align: center;
+    }
+
+    &-light {
+      font-weight: 300;
+    }
+
+    &-bold {
+      font-weight: 700;
+    }
+  }
+
+  &__cards {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @include desktop {
+      gap: 16px;
+    }
+
+    @include mobile {
+      gap: 6px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 60px;
+    flex: 0 0 calc(100% / 4 - 30px / 4 * 3);
+    padding: 44px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #101b34;
+
+    @include desktop {
+      flex: 0 0 calc(100% / 4 - 16px / 4 * 3);
+      padding: 40px 24px;
+    }
+
+    @include laptop {
+      flex: 0 0 calc(100% / 2 - 16px / 2);
+      gap: 30px;
+      padding: 24px;
+    }
+
+    @include mobile {
+      flex: 1 1 100%;
+    }
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex: 0 0 auto;
+
+      &-image {
+        display: block;
+        max-width: 100%;
+        width: 40px;
+        height: auto;
+
+        @include mobile {
+          width: 30px;
+        }
+      }
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 165%;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+  }
+}
