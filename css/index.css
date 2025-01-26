@@ -1270,7 +1270,7 @@ img {
 }
 @media (max-width: 576px) {
   .footer__logo-link-image {
-    width: 70px;
+    width: 90px;
   }
 }
 .footer__menu {
