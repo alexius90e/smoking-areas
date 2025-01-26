@@ -332,7 +332,7 @@ img {
   display: block;
   height: 465px;
   aspect-ratio: 380/576;
-  background: url(../assets/equipment-bg.png) top right/cover no-repeat;
+  background: url(../assets/first-screen-bg.webp) top right/cover no-repeat;
 }
 @media (max-width: 992px) {
   .first-screen::before {
@@ -549,7 +549,7 @@ img {
   z-index: 0;
   width: 710px;
   aspect-ratio: 710/832;
-  background: url(../assets/why-we-bg.png) center/cover no-repeat;
+  background: url(../assets/why-we-bg.webp) center/cover no-repeat;
   -webkit-transform: rotate(45deg) translate3d(-20px, -300px, 0);
           transform: rotate(45deg) translate3d(-20px, -300px, 0);
 }
@@ -730,7 +730,7 @@ img {
 
 .advantages {
   padding: 102px 0 130px;
-  background: url(../assets/advantages-bg.jpg) center/cover no-repeat;
+  background: url(../assets/advantages-bg.webp) center/cover no-repeat;
 }
 @media (max-width: 992px) {
   .advantages {
@@ -910,7 +910,7 @@ img {
   display: block;
   height: 576px;
   aspect-ratio: 380/576;
-  background: url(../assets/equipment-bg.png) top left/cover no-repeat;
+  background: url(../assets/equipment-bg.webp) top left/cover no-repeat;
 }
 @media (max-width: 992px) {
   .equipment::before {

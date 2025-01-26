@@ -21,7 +21,7 @@
     display: block;
     height: 576px;
     aspect-ratio: 380 / 576;
-    background: url(../assets/equipment-bg.png) top left / cover no-repeat;
+    background: url(../assets/equipment-bg.webp) top left / cover no-repeat;
 
     @include laptop {
       height: 420px;

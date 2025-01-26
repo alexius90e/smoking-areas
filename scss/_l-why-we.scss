@@ -23,7 +23,7 @@
       z-index: 0;
       width: 710px;
       aspect-ratio: 710 / 832;
-      background: url(../assets/why-we-bg.png) center / cover no-repeat;
+      background: url(../assets/why-we-bg.webp) center / cover no-repeat;
       transform: rotate(45deg) translate3d(-20px, -300px, 0);
 
       @include laptop {
