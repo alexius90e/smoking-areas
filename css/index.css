@@ -483,6 +483,8 @@ img {
   width: 100%;
   aspect-ratio: 755/450;
   border-radius: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .first-screen__slider .swiper {
   overflow: visible;
